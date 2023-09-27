@@ -38,7 +38,7 @@ if __name__ == "__main__":
         COMMAND = input("Введите оперцию > ")
         if COMMAND.isdigit() and int(COMMAND) == 0:
             break
-        if COMMAND in ("^2", "sin", "cos", "tg", "ctg", "ln", "log10"):
+        if COMMAND in ("^2", "sin", "cos", "tg", "ln", "log10"):
             NUM_1 = float(input("Первое число > "))
             result = calc(NUM_1, 0, COMMAND)
         else:
