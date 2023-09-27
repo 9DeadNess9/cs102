@@ -9,3 +9,8 @@ coverage.xml
 
 # Mypy cache
 .mypy_cache/
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/cs102.iml
+.idea/modules.xml
