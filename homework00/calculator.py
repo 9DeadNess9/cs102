@@ -1,5 +1,7 @@
 import math
 import typing as tp
+
+
 def calc(num_1: float, num_2: float, command: str) -> tp.Union[float, str]:
     if command == "+":
         return num_1 + num_2
