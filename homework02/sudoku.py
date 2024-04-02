@@ -38,11 +38,8 @@ def group(values: tp.List[T], n: int) -> tp.List[tp.List[T]]:
     >>> group([1,2,3,4,5,6,7,8,9], 3)
     [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     """
-<<<<<<< HEAD
-
-=======
     return [[values[j + n * i] for j in range(n)] for i in range(len(values) // n)]
->>>>>>> 6020216 (Delete homework02/sudoku.py)
+
 
 def get_row(grid: tp.List[tp.List[str]], pos: tp.Tuple[int, int]) -> tp.List[str]:
     """Возвращает все значения для номера строки, указанной в pos
