@@ -108,9 +108,9 @@ def make_step(grid: List[List[Union[str, int]]], k: int) -> List[List[Union[str,
                     found = 1
                 for coord in coords:
                     if (
-                            0 <= x + coord[0] <= rows - 1
-                            and 0 <= y + coord[1] <= cols - 1
-                            and grid[x + coord[0]][y + coord[1]] == 0
+                       0 <= x + coord[0] <= rows - 1
+                       and 0 <= y + coord[1] <= cols - 1
+                       and grid[x + coord[0]][y + coord[1]] == 0
                     ):
                         grid[x + coord[0]][y + coord[1]] = k
     return grid
@@ -136,7 +136,7 @@ def shortest_path(
 
     while not found:
         for coord in coords:
-            if ( 0 <= x + coord[0] < rows and 0 <= y + coord[1] < cols and grid[x + coord[0]][y + coord[1]] == k - 1):
+            if 0 <= x + coord[0] < rows and 0 <= y + coord[1] < cols and grid[x + coord[0]][y + coord[1]] == k - 1:
                 prev_x, prev_y = x, y
                 k -= 1
                 x += coord[0]
